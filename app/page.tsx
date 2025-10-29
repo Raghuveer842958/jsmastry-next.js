@@ -1,8 +1,13 @@
+import Hello from '@/components/Hello';
 import React from 'react'
 
 const page = () => {
+  console.log("This is a server component ");
   return (
-    <div>Home page</div>
+    <main>
+      <div>Home page</div>
+      <Hello/>
+    </main>
   )
 }
 
