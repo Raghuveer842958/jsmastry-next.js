@@ -32,8 +32,8 @@ const page = () => {
         <div>
           {users.length ? (
             users.map((user) => (
-              <Link href={`/dashboard/users/${user.id}`}>
-                <p key={user.id}>{user.name}</p>
+              <Link key={user.id} href={`/dashboard/users/${user.id}`}>
+                <p>{user.name}</p>
               </Link>
             ))
           ) : (

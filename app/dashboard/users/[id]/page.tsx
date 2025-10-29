@@ -2,15 +2,20 @@ import React from "react";
 
 interface UserDetailsProps {
   params: {
-    id: string;
+    id: string,
+    name: string
   };
 }
 
-const UserDetails = ({ params }: Readonly<UserDetailsProps>) => {
+// { params }: Readonly<{id : String}>
+
+const UserDetails = async ({ params }: Readonly<UserDetailsProps>) => {
+  const { id } = await params;
+  console.log("Usr id is :", id);
   return (
     <main>
       <h2>User Details Page</h2>
-      <p>User ID: {params.id}</p>
+      <p>User ID: {id}</p>
     </main>
   );
 };
