@@ -26,7 +26,6 @@ const page = () => {
   ];
   return (
     <main>
-      <div>User Page</div>
       <div>
         <h1>Users List</h1>
         <div>
